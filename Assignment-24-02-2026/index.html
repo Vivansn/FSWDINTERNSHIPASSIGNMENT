@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Console Calculator</title>
+</head>
+<body>
+
+<h2>Open Console (F12) to See Output</h2>
+
+<script>
+    let a = Number(prompt("Enter first number:"));
+    let b = Number(prompt("Enter second number:"));
+    let op = prompt("Enter operation (+, -, *, /):");
+
+    let result;
+
+    if (op === "+") {
+        result = a + b;
+    } else if (op === "-") {
+        result = a - b;
+    } else if (op === "*") {
+        result = a * b;
+    } else if (op === "/") {
+        result = a / b;
+    } else {
+        result = "Invalid operation";
+    }
+
+    console.log("Result:", result);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Manager</title>
+</head>
+<body>
+
+<h2>Open Console (F12) to see output</h2>
+
+<script>
+let students = [
+    { name: "Rahul", marks: [80, 75, 90] },
+    { name: "Anjali", marks: [85, 95, 88] },
+    { name: "Kiran", marks: [70, 60, 65] }
+];
+
+function calculateAverage(marks) {
+    let sum = 0;
+    for (let i = 0; i < marks.length; i++) {
+        sum += marks[i];
+    }
+    return sum / marks.length;
+}
+
+for (let i = 0; i < students.length; i++) {
+    let avg = calculateAverage(students[i].marks);
+    console.log(students[i].name + " Average: " + avg);
+}
+</script>
+
+</body>
+</html>

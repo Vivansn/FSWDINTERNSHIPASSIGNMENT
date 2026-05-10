@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hero Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            height: 100vh;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text button {
+            padding: 12px 25px;
+            border: none;
+            background: white;
+            color: #333;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background: #ddd;
+        }
+
+        .hero img {
+            width: 350px;
+        }
+
+        /* 🔥 Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+                padding: 30px;
+            }
+
+            .hero img {
+                width: 250px;
+                margin-top: 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="hero">
+    
+    <div class="hero-text">
+        <h1>Build Your Future</h1>
+        <p>Learn Full Stack Web Development and create amazing websites.</p>
+        <button>Get Started</button>
+    </div>
+
+    <div>
+        <img src="https://picsum.photos/400" alt="Hero Image">
+    </div>
+
+</section>
+
+</body>
+</html>

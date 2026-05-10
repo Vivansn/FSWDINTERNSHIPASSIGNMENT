@@ -1,0 +1,30 @@
+let a = Number(prompt("Enter first number:"));
+let b = Number(prompt("Enter second number:"));
+let op = prompt("Enter operation (+, -, *, /):");
+
+let result;
+
+if (op === "+") {
+    result = a + b;
+} else if (op === "-") {
+    result = a - b;
+} else if (op === "*") {
+    result = a * b;
+} else if (op === "/") {
+    result = a / b;
+} else {
+    result = "Invalid operation";
+}
+
+console.log("Result:", result);
+
+
+
+
+function calculator(a, b) {
+    console.log("Addition:", a + b);
+    console.log("Subtraction:", a - b);
+    console.log("Multiplication:", a * b);
+    console.log("Division:", a / b);
+}
+calculator(10, 5);

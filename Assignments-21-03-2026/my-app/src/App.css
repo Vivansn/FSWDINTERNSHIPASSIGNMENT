@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.filters button {
+  margin: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}

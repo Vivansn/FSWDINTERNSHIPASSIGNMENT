@@ -1,0 +1,82 @@
+
+********************Diagram************
+
+
+
+
++--------------------------------------------------+
+|                     Navbar                       |
+| (Logo | Search Bar | Profile Icon)              |
++--------------------------------------------------+
+| Sidebar             |         VideoList          |
+| (Home, Trending,    |   +---------------------+  |
+|  Subscriptions)     |   |     VideoCard       |  |
+|                     |   | Thumbnail | Title   |  |
+|                     |   +---------------------+  |
+|                     |   +---------------------+  |
+|                     |   |     VideoCard       |  |
+|                     |   +---------------------+  |
+|                     |   +---------------------+  |
+|                     |   |     VideoCard       |  |
+|                     |   +---------------------+  |
++--------------------------------------------------+
+|                      Footer                      |
++--------------------------------------------------+
+
+
+A website can be divided into smaller reusable parts called components.
+Each component handles a specific part of the user interface.
+
+Components Identified
+1. App (Main Component)
+Root component of the application
+Combines all other components
+
+2. Navbar
+Located at the top
+Contains:
+Logo
+Search bar
+User profile
+
+3. Sidebar
+Located on the left
+Contains navigation options:
+Home
+Trending
+Subscriptions
+
+4. VideoList
+Displays list of videos
+Acts as a container for multiple VideoCards
+
+5. VideoCard (Reusable Component)
+Displays individual video details:
+Thumbnail
+Title
+Channel name
+This component is reused multiple times
+
+6. Footer
+Located at the bottom
+Contains links and additional informations.
+
+Components are reusable UI elements 
+that make development easier and code more maintainable.
+
+*************Component Hierarchy****************
+
+App
+ ├── Navbar
+ ├── Sidebar
+ ├── VideoList
+ │     ├── VideoCard
+ │     ├── VideoCard
+ │     ├── VideoCard
+ └── Footer
+ 
+ Breaking a website into components helps in:
+
+Code reusability
+Easy maintenance
+Better structure

@@ -1,0 +1,73 @@
+
+
+*************DIAGRAM***********
+
+Client (Browser)
+        ↓ Request (HTTP)
+Internet / Network
+        ↓
+Server (Backend + Database)
+        ↑ Response (HTML/JSON)
+Client (Displays page)
+
+
+Client–Server Architecture is a model where:
+
+Client = user device (browser, mobile app)
+Server = system that provides data/services
+
+Client Role
+Sends request
+Displays response
+Example:
+ Chrome, Edge browser
+
+ Server Role
+Processes request
+Sends response
+Example:
+Node.js server, database
+
+*********************Step-by-Step Process**********************
+Step 1: Enter URL
+
+User types URL in browser
+
+Step 2: DNS Lookup
+
+Browser finds IP address of website
+
+ Example:
+
+google.com → 142.250.xxx.xxx
+Step 3: Send Request
+
+Browser sends:
+
+HTTP Request → Server
+Step 4: Server Processing
+
+Server:
+
+Receives request
+Runs backend code
+Fetches data from database
+Step 5: Server Response
+
+Server sends:
+
+HTML / CSS / JSON
+Step 6: Browser Rendering
+
+Browser:
+
+Builds page
+Displays UI
+
+User → Browser → DNS → Server → Database → Server → Browser → Display
+
+When a user enters a URL, the browser resolves the domain using DNS, sends an HTTP request 
+to the server, the server processes it and returns a response, which the browser renders as
+ a webpage.
+
+ 
