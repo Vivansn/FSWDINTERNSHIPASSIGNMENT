@@ -8,7 +8,7 @@ app.use(express.json());
 const PORT = 3000;
 
 // 🔗 Connect MongoDB (use your Atlas link)
-mongoose.connect("mongodb+srv://@vcluster.iq3w6bj.mongodb.net/?appName=vcluster")
+mongoose.connect("")
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
