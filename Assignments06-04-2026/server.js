@@ -9,7 +9,7 @@ app.use(express.json());
 const User = require("./models/User");
 
 // 🔗 MongoDB Connection
-mongoose.connect("mongodb+srv://admin:admin123@vcluster.iq3w6bj.mongodb.net/?appName=vcluster")
+mongoose.connect("")
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
